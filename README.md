@@ -73,7 +73,7 @@ Egypt's food delivery market is booming. But without data, restaurants risk:
 Shows order volume by month and hour of day.  
 **Key takeaway**: Orders spike at 8–10 PM – perfect for Iftar staffing.
 
-![Monthly Sales & Peak Hours](Image/1.png)
+![Monthly Sales & Peak Hours](Imge/dashboard_overview.png)
 
 ---
 
@@ -81,7 +81,7 @@ Shows order volume by month and hour of day.
 Compares revenue across pizza types and sizes.  
 **Key takeaway**: Thai Chicken (Large) is the undisputed king. Veggie pizzas struggle.
 
-![Top Pizzas by Revenue](Image/2.png)
+![Top Pizzas by Revenue](Image/peak_hours_chart.png)
 
 ---
 
@@ -89,7 +89,7 @@ Compares revenue across pizza types and sizes.
 Highlights revenue split by size (Small, Medium, Large, XL) and performance by pizza category (Chicken, Classic, Veggie, etc.).  
 **Key takeaway**: Large size drives >60% of revenue – promote family deals.
 
-![Size Distribution & Category](Image/3.png)
+![Size Distribution & Category](Image/sales_by_pizza.png)
 
 ---
 
@@ -97,10 +97,8 @@ Highlights revenue split by size (Small, Medium, Large, XL) and performance by p
 One‑page summary: Total Orders, Peak Hour, Top Pizza, Average Order Value, Busiest Day, and Seasonal Trends.  
 **Key takeaway**: At a glance, the business needs to optimize for evenings and weekends.
 
-![KPI Overview](Image/4.png)
-
 > All images are stored in the `/Image` folder of this repository.
 
 ---
 
-## 📂 Repository Structure
+
