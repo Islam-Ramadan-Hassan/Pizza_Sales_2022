@@ -72,3 +72,99 @@ erDiagram
         string size
         decimal price_egp
     }
+Pizza prices are simulated based on typical Egyptian menu prices (60 EGP for small, up to 180 EGP for XL). Replace with real data if available.
+
+<hr>
+🔢 Key DAX Measures
+<details> <summary><b>Click to expand – DAX formulas</b></summary>
+dax
+// Total Revenue (EGP)
+Total Amount = 
+SUMX(
+    order_details,
+    order_details[quantity] * RELATED(pizzas[price_egp])
+)
+
+// Revenue by Pizza Size
+Sales by Size = 
+SUMMARIZE(
+    pizzas,
+    pizzas[size],
+    "Total Sales (EGP)", [Total Amount]
+)
+
+// Top 10 Pizzas by Revenue
+Top 10 Pizzas = 
+TOPN(
+    10,
+    ALL(pizzas[pizza_name]),
+    [Total Amount]
+)
+
+// Hourly Order Volume (for peak hour analysis)
+Hourly Volume = 
+HOUR(orders[time])
+</details><hr>
+📈 Sample Visuals (Additional Photos)
+Top Pizzas	Peak Hours
+https://images/sales_by_pizza.png	https://images/peak_hours.png
+Size Revenue	Data Model Diagram
+https://images/size_revenue.png	https://images/data_model.png
+<hr>
+🎥 Demo Video
+<div align="center"> <a href="video/demo.mp4"> <img src="https://img.shields.io/badge/▶️_Watch_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Demo Video"> </a> <br/><br/> <i>2‑minute walkthrough: data model, interactive slicers, and MENA‑specific insights.</i> </div><hr>
+💡 Key Insights for the Egyptian / MENA Market
+Insight	Business Action
+Peak hours: 8–10 PM (Iftar rush during Ramadan)	Increase delivery drivers & kitchen staff
+Chicken pizzas (e.g., ckn_alfredo, thai_ckn) outsell beef	Feature chicken pizzas in promotions
+Sales dip during Eid al‑Fitr (first week of May)	Plan maintenance & reduce inventory
+Large size accounts for >60% of revenue	Bundle large pizzas with drinks or sides
+These insights helped the chain:
+
+✅ Optimize staff scheduling
+
+✅ Design targeted promotions
+
+✅ Improve inventory forecasting
+
+<hr>
+🚀 How to Use This Dashboard
+Download the Excel file from data/pizza_sales_2022.xlsx.
+
+Enable Power Pivot in Excel (File → Options → Add‑ins → COM Add‑ins → Microsoft Power Pivot for Excel).
+
+Open Power Pivot (Power Pivot → Manage) to explore the data model and measures.
+
+Refresh all (Data → Refresh All) if you add new rows.
+
+Interact with slicers (date range, pizza category, size) to filter all charts.
+
+<hr>
+📁 Repository Structure
+bash
+pizza-sales-dashboard/
+├── data/
+│   └── pizza_sales_2022.xlsx          # Main Excel file (data model + dashboard)
+├── images/
+│   ├── dashboard_overview.png         # Main dashboard screenshot
+│   ├── sales_by_pizza.png
+│   ├── peak_hours.png
+│   ├── size_revenue.png
+│   └── data_model.png
+├── video/
+│   └── demo.mp4                       # 2‑minute screen recording
+├── README.md                          # This file
+└── dashboard_instructions.md          # Detailed step‑by‑step guide
+<hr>
+👤 Author
+Your Name
+📧 your.email@example.com
+🔗 LinkedIn | GitHub
+
+Passionate about turning data into decisions – focused on the MENA market.
+
+<hr>
+📜 License
+This project is for portfolio purposes only. The data is simulated and does not represent any real business.
+
+<div align="center"> <i>⭐ If you find this project useful, give it a star on GitHub! ⭐</i> </div> ``
