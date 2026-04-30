@@ -81,7 +81,7 @@ Shows order volume by month and hour of day.
 Compares revenue across pizza types and sizes.  
 **Key takeaway**: Thai Chicken (Large) is the undisputed king. Veggie pizzas struggle.
 
-![Top Pizzas by Revenue](Image/peak_hours_chart.png)
+![Top Pizzas by Revenue](Imge/peak_hours_chart.png)
 
 ---
 
