@@ -89,7 +89,7 @@ Compares revenue across pizza types and sizes.
 Highlights revenue split by size (Small, Medium, Large, XL) and performance by pizza category (Chicken, Classic, Veggie, etc.).  
 **Key takeaway**: Large size drives >60% of revenue – promote family deals.
 
-![Size Distribution & Category](Image/sales_by_pizza.png)
+![Size Distribution & Category](Imge/sales_by_pizza.png)
 
 ---
 
