@@ -62,14 +62,14 @@ Egypt's food delivery market is booming. But without data, restaurants risk:
 
 ## 🎥 Demo Video
 
-👉 **[Watch the 2‑minute dashboard walkthrough](https://youtu.be/your-link-here)**  
+👉 **[Watch the 2‑minute dashboard walkthrough](https://drive.google.com/file/d/1fbn_bU2sB047agig-hiIndhZP0KI2Hni/view?usp=drive_link)**  
 *I show how to filter by date (Ramadan vs normal), spot top pizzas, and export MENA‑ready insights.*
 
 ---
 
 ## 📸 Images (Screenshots from the project)
 
-### `1.png` – Monthly Sales & Peak Hours  
+### `Dashboard Overview` – Monthly Sales & Peak Hours  
 Shows order volume by month and hour of day.  
 **Key takeaway**: Orders spike at 8–10 PM – perfect for Iftar staffing.
 
@@ -77,7 +77,7 @@ Shows order volume by month and hour of day.
 
 ---
 
-### `2.png` – Top Pizzas by Revenue & Quantity  
+### `Peak hours chart` – Top Pizzas by Revenue & Quantity  
 Compares revenue across pizza types and sizes.  
 **Key takeaway**: Thai Chicken (Large) is the undisputed king. Veggie pizzas struggle.
 
@@ -85,7 +85,7 @@ Compares revenue across pizza types and sizes.
 
 ---
 
-### `3.png` – Size Distribution & Category Performance  
+### `Sales By Pizza` – Size Distribution & Category Performance  
 Highlights revenue split by size (Small, Medium, Large, XL) and performance by pizza category (Chicken, Classic, Veggie, etc.).  
 **Key takeaway**: Large size drives >60% of revenue – promote family deals.
 
@@ -93,12 +93,5 @@ Highlights revenue split by size (Small, Medium, Large, XL) and performance by p
 
 ---
 
-### `4.png` – Key Performance Indicators (KPIs)  
-One‑page summary: Total Orders, Peak Hour, Top Pizza, Average Order Value, Busiest Day, and Seasonal Trends.  
-**Key takeaway**: At a glance, the business needs to optimize for evenings and weekends.
-
-> All images are stored in the `/Image` folder of this repository.
-
----
 
 
