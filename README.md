@@ -62,8 +62,7 @@ Egypt's food delivery market is booming. But without data, restaurants risk:
 
 ## 🎥 Demo Video
 
-👉 **[Watch the 2‑minute dashboard walkthrough](https://drive.google.com/file/d/1fbn_bU2sB047agig-hiIndhZP0KI2Hni/view?usp=drive_link)**  
-*I show how to filter by date (Ramadan vs normal), spot top pizzas, and export MENA‑ready insights.*
+👉 **[Watch the 1‑minute dashboard walkthrough](https://drive.google.com/file/d/1fbn_bU2sB047agig-hiIndhZP0KI2Hni/view?usp=drive_link)**  
 
 ---
 
