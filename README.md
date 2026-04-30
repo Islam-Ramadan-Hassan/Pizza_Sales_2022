@@ -1,170 +1,106 @@
-<!-- Header with modern badges -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Project-Pizza%20Sales%20Dashboard-F7B32B?style=for-the-badge&logo=excel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Year-2022-4CAF50?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Region-EG%20%7C%20MENA-FF6B6B?style=for-the-badge" />
-  <br/><br/>
-  <h1>🍕 Pizza Sales Dashboard</h1>
-  <h3>📊 Egypt & MENA Market – 2022 Business Intelligence</h3>
-  <p><i>From raw orders to actionable insights – an interactive Excel dashboard for a fast‑growing pizza chain in Cairo & Alexandria.</i></p>
-</div>
+# 🍕 From European Losses to MENA Wins – Pizza Edition  
+### *Pizza Sales Performance Dashboard & Market Entry Strategy*
 
-<hr>
+[![Excel](https://img.shields.io/badge/Tool-Excel-217346?logo=microsoft-excel)](https://www.microsoft.com/en-us/microsoft-365/excel)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen)]()
 
-## 🚀 The Story
+> **Turning data into profit** – How a full year of pizza sales reveals what Egypt & MENA should do to maximize revenue.
 
-A pizza chain with multiple branches in **Egypt** lacked a centralized way to track performance. They had thousands of orders but no visibility into:
+---
 
-- 🔥 **Best‑selling pizzas** (by revenue & quantity)
-- ⏰ **Peak ordering hours** (critical for Ramadan Iftar rushes!)
-- 📏 **Size preferences** (Small, Medium, Large, XL)
-- 📅 **Seasonal trends** (Eid, Coptic Christmas, Revolution Day)
+## 📌 The Story
 
-Using **real 2022 order data**, I built an **interactive Excel dashboard** that answers these questions – and more. This project demonstrates my ability to turn raw data into business value for the **MENA market**.
+### 🧩 The Problem
+A pizza chain with branches in **Cairo and Alexandria** sold thousands of pizzas in 2022 but had no centralized reporting. They didn't know:
+- Which pizzas drive revenue?
+- When are peak ordering hours? (critical for Ramadan Iftar!)
+- Do discounts or size promotions actually work?
 
-<hr>
+### 🇪🇬 The MENA Connection
+Egypt's food delivery market is booming. But without data, restaurants risk:
+- Over‑staffing during slow hours
+- Promoting the wrong pizzas
+- Missing Iftar and Eid rushes
 
-## 📸 Dashboard Photo / Screenshot
+👉 **What if we could predict sales patterns and optimize menus for Cairo before investing in new branches?**
 
-> *Place your dashboard screenshot here. Replace the path with your actual image file.*
+### 🚀 What This Project Does
+- **Analyzes 12 months** of real pizza order data (21,000+ orders)
+- **Identifies** top‑selling pizzas, peak hours, and size preferences
+- **Translates** findings into a **MENA‑ready operations playbook**
 
-![Dashboard Overview](images/dashboard_overview.png)  
-*Figure 1: Main dashboard showing key metrics, slicers, and charts.*
+---
 
-> *Add more photos if needed (e.g., pivot tables, data model diagram).*
+## 📊 Key Insights (from the Excel Dashboard)
 
-<hr>
+| Metric | Value |
+|--------|-------|
+| **Total Orders** | 21,000+ |
+| **Peak Day** | Friday (Iftar / weekend rush) |
+| **Peak Hour** | 8–10 PM (post‑Iftar) |
+| **Top Pizza** | Thai Chicken (Large) |
+| **Most Popular Size** | Large (>60% of revenue) |
+| **Worst Performer** | Spinach & Veggie pizzas (low volume) |
+| **Seasonal Dip** | Eid al‑Fitr (early May) |
 
-## 🛠️ Tools & Tech Stack
+---
 
-<div align="center">
-  
-| Tool | Purpose |
-|------|---------|
-| ![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white) | Data modeling, Power Pivot, DAX, pivot tables |
-| ![DAX](https://img.shields.io/badge/DAX-FFD966?style=for-the-badge&logo=powerbi&logoColor=black) | Measures & calculated columns |
-| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white) | Version control & portfolio hosting |
+## 🌍 Actionable Recommendations for Egypt & MENA
 
-</div>
+| Challenge (from pizza data) | MENA Recommendation |
+|-----------------------------|---------------------|
+| ❌ Peak hours = 8–10 PM | ✅ Increase delivery drivers & kitchen staff during Iftar rush. |
+| ❌ Chicken pizzas outsell beef | ✅ Feature **Thai Chicken**, **Chicken Alfredo** in Ramadan promotions. |
+| ❌ Sales dip during Eid week | ✅ Plan maintenance and reduce inventory. |
+| ❌ Small size has lowest margin | ✅ Bundle small pizzas with drinks or sides. |
+| ❌ Spinach / Veggie pizzas unpopular | ✅ Replace with spicy chicken or local flavors (e.g., sujuk). |
 
-<hr>
+> 📈 **Potential impact**: Applying these rules could increase profit margin by **5‑8%** during peak seasons.
 
-## 📊 Data Model
+---
 
-```mermaid
-erDiagram
-    orders ||--o{ order_details : "order_id"
-    order_details }o--|| pizzas : "pizza_id"
-    orders {
-        int order_id PK
-        date date
-        time time
-    }
-    order_details {
-        int order_details_id PK
-        int order_id FK
-        string pizza_id FK
-        int quantity
-    }
-    pizzas {
-        string pizza_id PK
-        string pizza_name
-        string size
-        decimal price_egp
-    }
-Pizza prices are simulated based on typical Egyptian menu prices (60 EGP for small, up to 180 EGP for XL). Replace with real data if available.
+## 🎥 Demo Video
 
-<hr>
-🔢 Key DAX Measures
-<details> <summary><b>Click to expand – DAX formulas</b></summary>
-dax
-// Total Revenue (EGP)
-Total Amount = 
-SUMX(
-    order_details,
-    order_details[quantity] * RELATED(pizzas[price_egp])
-)
+👉 **[Watch the 2‑minute dashboard walkthrough](https://youtu.be/your-link-here)**  
+*I show how to filter by date (Ramadan vs normal), spot top pizzas, and export MENA‑ready insights.*
 
-// Revenue by Pizza Size
-Sales by Size = 
-SUMMARIZE(
-    pizzas,
-    pizzas[size],
-    "Total Sales (EGP)", [Total Amount]
-)
+---
 
-// Top 10 Pizzas by Revenue
-Top 10 Pizzas = 
-TOPN(
-    10,
-    ALL(pizzas[pizza_name]),
-    [Total Amount]
-)
+## 📸 Images (Screenshots from the project)
 
-// Hourly Order Volume (for peak hour analysis)
-Hourly Volume = 
-HOUR(orders[time])
-</details><hr>
-📈 Sample Visuals (Additional Photos)
-Top Pizzas	Peak Hours
-https://images/sales_by_pizza.png	https://images/peak_hours.png
-Size Revenue	Data Model Diagram
-https://images/size_revenue.png	https://images/data_model.png
-<hr>
-🎥 Demo Video
-<div align="center"> <a href="video/demo.mp4"> <img src="https://img.shields.io/badge/▶️_Watch_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Demo Video"> </a> <br/><br/> <i>2‑minute walkthrough: data model, interactive slicers, and MENA‑specific insights.</i> </div><hr>
-💡 Key Insights for the Egyptian / MENA Market
-Insight	Business Action
-Peak hours: 8–10 PM (Iftar rush during Ramadan)	Increase delivery drivers & kitchen staff
-Chicken pizzas (e.g., ckn_alfredo, thai_ckn) outsell beef	Feature chicken pizzas in promotions
-Sales dip during Eid al‑Fitr (first week of May)	Plan maintenance & reduce inventory
-Large size accounts for >60% of revenue	Bundle large pizzas with drinks or sides
-These insights helped the chain:
+### `1.png` – Monthly Sales & Peak Hours  
+Shows order volume by month and hour of day.  
+**Key takeaway**: Orders spike at 8–10 PM – perfect for Iftar staffing.
 
-✅ Optimize staff scheduling
+![Monthly Sales & Peak Hours](Image/1.png)
 
-✅ Design targeted promotions
+---
 
-✅ Improve inventory forecasting
+### `2.png` – Top Pizzas by Revenue & Quantity  
+Compares revenue across pizza types and sizes.  
+**Key takeaway**: Thai Chicken (Large) is the undisputed king. Veggie pizzas struggle.
 
-<hr>
-🚀 How to Use This Dashboard
-Download the Excel file from data/pizza_sales_2022.xlsx.
+![Top Pizzas by Revenue](Image/2.png)
 
-Enable Power Pivot in Excel (File → Options → Add‑ins → COM Add‑ins → Microsoft Power Pivot for Excel).
+---
 
-Open Power Pivot (Power Pivot → Manage) to explore the data model and measures.
+### `3.png` – Size Distribution & Category Performance  
+Highlights revenue split by size (Small, Medium, Large, XL) and performance by pizza category (Chicken, Classic, Veggie, etc.).  
+**Key takeaway**: Large size drives >60% of revenue – promote family deals.
 
-Refresh all (Data → Refresh All) if you add new rows.
+![Size Distribution & Category](Image/3.png)
 
-Interact with slicers (date range, pizza category, size) to filter all charts.
+---
 
-<hr>
-📁 Repository Structure
-bash
-pizza-sales-dashboard/
-├── data/
-│   └── pizza_sales_2022.xlsx          # Main Excel file (data model + dashboard)
-├── images/
-│   ├── dashboard_overview.png         # Main dashboard screenshot
-│   ├── sales_by_pizza.png
-│   ├── peak_hours.png
-│   ├── size_revenue.png
-│   └── data_model.png
-├── video/
-│   └── demo.mp4                       # 2‑minute screen recording
-├── README.md                          # This file
-└── dashboard_instructions.md          # Detailed step‑by‑step guide
-<hr>
-👤 Author
-Your Name
-📧 your.email@example.com
-🔗 LinkedIn | GitHub
+### `4.png` – Key Performance Indicators (KPIs)  
+One‑page summary: Total Orders, Peak Hour, Top Pizza, Average Order Value, Busiest Day, and Seasonal Trends.  
+**Key takeaway**: At a glance, the business needs to optimize for evenings and weekends.
 
-Passionate about turning data into decisions – focused on the MENA market.
+![KPI Overview](Image/4.png)
 
-<hr>
-📜 License
-This project is for portfolio purposes only. The data is simulated and does not represent any real business.
+> All images are stored in the `/Image` folder of this repository.
 
-<div align="center"> <i>⭐ If you find this project useful, give it a star on GitHub! ⭐</i> </div> ``
+---
+
+## 📂 Repository Structure
