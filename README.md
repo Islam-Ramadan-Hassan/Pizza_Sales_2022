@@ -1,4 +1,4 @@
-# 🍕 From European Losses to MENA Wins – Pizza Edition  
+# 🍕 From European Losses to MENA Wins – 
 ### *Pizza Sales Performance Dashboard & Market Entry Strategy*
 
 [![Excel](https://img.shields.io/badge/Tool-Excel-217346?logo=microsoft-excel)](https://www.microsoft.com/en-us/microsoft-365/excel)
