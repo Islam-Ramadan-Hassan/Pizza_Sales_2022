@@ -1,4 +1,4 @@
-<!-- Header with modern gradient banner (using emoji + bold text) -->
+<!-- Header with modern badges -->
 <div align="center">
   <img src="https://img.shields.io/badge/Project-Pizza%20Sales%20Dashboard-F7B32B?style=for-the-badge&logo=excel&logoColor=white" />
   <img src="https://img.shields.io/badge/Year-2022-4CAF50?style=for-the-badge" />
@@ -21,6 +21,17 @@ A pizza chain with multiple branches in **Egypt** lacked a centralized way to tr
 - 📅 **Seasonal trends** (Eid, Coptic Christmas, Revolution Day)
 
 Using **real 2022 order data**, I built an **interactive Excel dashboard** that answers these questions – and more. This project demonstrates my ability to turn raw data into business value for the **MENA market**.
+
+<hr>
+
+## 📸 Dashboard Photo / Screenshot
+
+> *Place your dashboard screenshot here. Replace the path with your actual image file.*
+
+![Dashboard Overview](images/dashboard_overview.png)  
+*Figure 1: Main dashboard showing key metrics, slicers, and charts.*
+
+> *Add more photos if needed (e.g., pivot tables, data model diagram).*
 
 <hr>
 
